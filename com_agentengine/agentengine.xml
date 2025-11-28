@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" method="upgrade">
   <name>com_agentengine</name>
-  <creationDate>2024-07-26</creationDate>
+  <creationDate>2025-01-28</creationDate>
   <author>Jules</author>
-  <version>1.0.0</version>
-  <description>Agent creation and deployment engine for Joomla 5</description>
+  <copyright>(C) 2025 AgentEngine. All rights reserved.</copyright>
+  <license>GNU General Public License version 2 or later</license>
+  <authorEmail>info@example.com</authorEmail>
+  <authorUrl>www.example.com</authorUrl>
+  <version>1.1.0</version>
+  <description>AI-powered Agent Engine for Joomla 5 - Enabling intelligent automation with Development Action Taking, Code Generation, DOM Intelligence, Chat, and Maintainer agents</description>
 
-  <!-- PSR-4: Joomla will map Administrator/Site to the src folder -->
-  <namespace path="src">Jules\Component\AgentEngine</namespace>
+  <!-- PSR-4: Combined with manual loading in provider.php -->
+  <namespace path="src">Jules\Component\AgentEngine\Administrator</namespace>
 
   <administration>
     <menu>Agent Engine</menu>
