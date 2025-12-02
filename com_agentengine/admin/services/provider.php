@@ -25,6 +25,10 @@ return new class implements ServiceProviderInterface
         $container->set(
             ComponentInterface::class,
             function (Container $container) {
+                if (!class_exists(AgentEngineComponent::class)) {
+                    require_once dirname(__DIR__) . '/src/Extension/AgentEngineComponent.php';
+                }
+
                 $component = new AgentEngineComponent(
                     $container->get(ComponentDispatcherFactoryInterface::class)
                 );
